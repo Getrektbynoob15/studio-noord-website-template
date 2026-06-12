@@ -3,103 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Studio Noord ontwerpt heldere digitale ervaringen voor ambitieuze organisaties.">
-  <title>Studio Noord | Digitaal ontwerp</title>
+  <meta name="description" content="The Urban Barber: strakke cuts, goede beats en een ontspannen sfeer.">
+  <title>The Urban Barber | Cuts, beats & good vibes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Direct naar inhoud</a>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Studio Noord, home">
-      <span class="brand-mark">N</span>
-      <span>Studio Noord</span>
+    <a class="brand" href="index.html" aria-label="The Urban Barber, home">
+      <span class="brand-mark">UB</span>
+      <span>The Urban Barber</span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
-      <span class="menu-icon" aria-hidden="true"></span>
-      <span class="sr-only">Menu openen</span>
+      <span class="menu-icon" aria-hidden="true"></span><span class="sr-only">Menu openen</span>
     </button>
     <nav id="main-nav" class="main-nav" aria-label="Hoofdnavigatie">
       <a class="active" href="index.html" aria-current="page">Home</a>
-      <a href="over-ons.html">Over ons</a>
-      <a class="nav-cta" href="#contact">Contact</a>
+      <a href="#diensten">Diensten</a>
+      <a href="over-ons.html">Barbers</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#afspraak">Afspraak</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero">
-      <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1800&q=85" alt="Ontwerper aan het werk achter een bureau">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1900&q=88" alt="Barber die een klant zorgvuldig knipt">
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <p class="eyebrow">Digitaal bureau in Rotterdam</p>
-        <h1>Studio Noord</h1>
-        <p class="hero-text">Wij maken digitale ervaringen die helder voelen, sterk presteren en met je organisatie meegroeien.</p>
-        <a class="button button-primary" href="#werk">Bekijk ons werk <span aria-hidden="true">→</span></a>
+        <p class="eyebrow">Cuts · Beats · Good vibes</p>
+        <h1>Fresh cut.<br>Fresh mood.</h1>
+        <p class="hero-text">Geen stijve kapsalon. Wel scherpe fades, eerlijk advies, goede muziek en iets kouds te drinken.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#afspraak">Boek je stoel <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#diensten">Bekijk prijzen</a>
+        </div>
       </div>
-      <a class="scroll-cue" href="#diensten">Ontdek meer <span aria-hidden="true">↓</span></a>
+      <p class="hero-note">Walk-ins welkom.<br>Goede verhalen ook.</p>
+    </section>
+
+    <section class="ticker" aria-label="Sfeer van The Urban Barber">
+      <span>STRakke cuts</span><span>GOEDE BEATS</span><span>EERLIJK ADVIES</span><span>GEEN GEDOE</span>
     </section>
 
     <section id="diensten" class="section">
       <div class="section-heading">
-        <div>
-          <p class="eyebrow">Wat we doen</p>
-          <h2>Van idee naar impact.</h2>
-        </div>
-        <p>We combineren strategie, ontwerp en techniek tot websites die mensen graag gebruiken.</p>
+        <div><p class="eyebrow">Diensten & prijzen</p><h2>Kies je upgrade.</h2></div>
+        <p>Duidelijke prijzen. Geen verrassingen, behalve dat je er ineens heel goed uitziet.</p>
       </div>
-      <div class="service-grid">
-        <article class="service">
-          <span class="service-number">01</span>
-          <h3>Strategie</h3>
-          <p>We brengen doelen en gebruikers samen in een scherpe digitale koers.</p>
-        </article>
-        <article class="service">
-          <span class="service-number">02</span>
-          <h3>Ontwerp</h3>
-          <p>Toegankelijke interfaces met een herkenbare uitstraling en logische flow.</p>
-        </article>
-        <article class="service">
-          <span class="service-number">03</span>
-          <h3>Development</h3>
-          <p>Snelle, responsive websites die betrouwbaar werken op ieder scherm.</p>
-        </article>
+      <div class="price-list">
+        <article class="price-item"><div><span>01</span><h3>Fresh Cut</h3><p>Knippen, stylen en eerlijk advies.</p></div><strong>€ 29</strong></article>
+        <article class="price-item"><div><span>02</span><h3>Skin Fade</h3><p>Strak van nul naar jouw perfecte look.</p></div><strong>€ 34</strong></article>
+        <article class="price-item"><div><span>03</span><h3>Beard Detail</h3><p>Trimmen, lijnen en verzorgen.</p></div><strong>€ 22</strong></article>
+        <article class="price-item"><div><span>04</span><h3>Full Experience</h3><p>Haircut, beard en hot towel.</p></div><strong>€ 49</strong></article>
       </div>
     </section>
 
-    <section id="werk" class="work-section">
-      <div class="section-heading light">
-        <div>
-          <p class="eyebrow">Uitgelicht werk</p>
-          <h2>Gemaakt om bij te blijven.</h2>
-        </div>
-        <a class="text-link" href="over-ons.html">Leer ons kennen <span aria-hidden="true">→</span></a>
+    <section class="vibe-section">
+      <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1500&q=88" alt="Sfeervolle werkplek in een barbershop" loading="lazy">
+      <div class="vibe-copy">
+        <p class="eyebrow">De Urban vibe</p>
+        <h2>Kom voor de cut. Blijf voor de sfeer.</h2>
+        <p>Bij ons draait het om meer dan haar. Zak onderuit, pak een drankje en laat de playlist de rest doen. R&B, funk, hiphop of old-school soul: zolang het swingt, zit je goed.</p>
+        <a class="text-link gold" href="over-ons.html">Meet the barbers <span aria-hidden="true">→</span></a>
       </div>
-      <div class="project-grid">
-        <article class="project project-wide">
-          <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1400&q=85" alt="Websiteontwerp op een laptopscherm" loading="lazy">
-          <div class="project-meta"><h3>Haven & Hart</h3><p>Merkstrategie · Webdesign</p></div>
-        </article>
-        <article class="project">
-          <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=1000&q=85" alt="Kleurrijk abstract digitaal ontwerp" loading="lazy">
-          <div class="project-meta"><h3>Nova Finance</h3><p>UX-design · Development</p></div>
-        </article>
+    </section>
+
+    <section id="afspraak" class="booking-section">
+      <div>
+        <p class="eyebrow">Reserveer je moment</p>
+        <h2>Klaar voor een frisse look?</h2>
       </div>
+      <form class="booking-form">
+        <label>Naam<input type="text" name="naam" placeholder="Jouw naam" required></label>
+        <label>Dienst<select name="dienst"><option>Fresh Cut</option><option>Skin Fade</option><option>Beard Detail</option><option>Full Experience</option></select></label>
+        <label>Gewenste dag<input type="date" name="datum" required></label>
+        <button class="button button-primary" type="submit">Vraag afspraak aan <span aria-hidden="true">→</span></button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
     </section>
 
     <section id="contact" class="contact-section">
-      <p class="eyebrow">Een idee in gedachten?</p>
-      <h2>Laten we iets goeds maken.</h2>
-      <a class="button button-dark" href="mailto:hallo@studionoord.nl">hallo@studionoord.nl <span aria-hidden="true">→</span></a>
+      <div><p class="eyebrow">Openingstijden</p><h2>Wanneer de stoel draait.</h2></div>
+      <dl class="hours"><div><dt>Maandag</dt><dd>Gesloten</dd></div><div><dt>Di - Vrij</dt><dd>10:00 - 19:00</dd></div><div><dt>Zaterdag</dt><dd>09:00 - 17:00</dd></div><div><dt>Zondag</dt><dd>12:00 - 17:00</dd></div></dl>
+      <div class="contact-details"><p>Urbanstraat 12<br>7311 AA Apeldoorn</p><a href="tel:+31551234567">055 - 123 45 67</a><a href="mailto:yo@theurbanbarber.nl">yo@theurbanbarber.nl</a></div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand" href="index.html"><span class="brand-mark">N</span><span>Studio Noord</span></a>
-    <p>© <span data-year></span> Studio Noord</p>
-    <div class="footer-links"><a href="#">Instagram</a><a href="#">LinkedIn</a></div>
+    <a class="brand" href="index.html"><span class="brand-mark">UB</span><span>The Urban Barber</span></a>
+    <p>© <span data-year></span> The Urban Barber</p>
+    <div class="footer-links"><a href="#">Instagram</a><a href="#">Spotify</a></div>
   </footer>
 </body>
 </html>
