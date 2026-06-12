@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <script src="js/main.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Direct naar inhoud</a>
@@ -64,7 +64,7 @@
     </section>
 
     <section class="vibe-section">
-      <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1500&q=88" alt="Sfeervolle werkplek in een barbershop" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1500&q=88" alt="Sfeervolle werkplek in een barbershop">
       <div class="vibe-copy">
         <p class="eyebrow">De Urban vibe</p>
         <h2>Kom voor de cut. Blijf voor de sfeer.</h2>
@@ -74,13 +74,20 @@
     </section>
 
     <section id="afspraak" class="booking-section">
-      <div>
+      <div class="booking-intro">
         <p class="eyebrow">Reserveer je moment</p>
         <h2>Klaar voor een frisse look?</h2>
+        <p>Kies je behandeling en voorkeursdag. Wij bellen of mailen je om het tijdstip te bevestigen.</p>
+        <ul class="booking-perks">
+          <li>Persoonlijk advies inbegrepen</li>
+          <li>Gratis drankje tijdens je afspraak</li>
+          <li>Meestal binnen één werkdag bevestigd</li>
+        </ul>
       </div>
-      <form class="booking-form">
-        <label>Naam<input type="text" name="naam" placeholder="Jouw naam" required></label>
-        <label>Dienst<select name="dienst"><option>Fresh Cut</option><option>Skin Fade</option><option>Beard Detail</option><option>Full Experience</option></select></label>
+      <form class="booking-form" aria-label="Afspraak aanvragen">
+        <label>Naam<input type="text" name="naam" placeholder="Hoe mogen we je noemen?" autocomplete="name" required></label>
+        <label>E-mail<input type="email" name="email" placeholder="jij@voorbeeld.nl" autocomplete="email" required></label>
+        <label>Dienst<select name="dienst"><option>Fresh Cut — €29</option><option>Skin Fade — €34</option><option>Beard Detail — €22</option><option>Full Experience — €49</option></select></label>
         <label>Gewenste dag<input type="date" name="datum" required></label>
         <button class="button button-primary" type="submit">Vraag afspraak aan <span aria-hidden="true">→</span></button>
         <p class="form-status" aria-live="polite"></p>
@@ -90,14 +97,14 @@
     <section id="contact" class="contact-section">
       <div><p class="eyebrow">Openingstijden</p><h2>Wanneer de stoel draait.</h2></div>
       <dl class="hours"><div><dt>Maandag</dt><dd>Gesloten</dd></div><div><dt>Di - Vrij</dt><dd>10:00 - 19:00</dd></div><div><dt>Zaterdag</dt><dd>09:00 - 17:00</dd></div><div><dt>Zondag</dt><dd>12:00 - 17:00</dd></div></dl>
-      <div class="contact-details"><p>Urbanstraat 12<br>7311 AA Apeldoorn</p><a href="tel:+31551234567">055 - 123 45 67</a><a href="mailto:yo@theurbanbarber.nl">yo@theurbanbarber.nl</a></div>
+      <div class="contact-details"><p class="contact-label">Vind ons</p><p>Urbanstraat 12<br>7311 AA Apeldoorn</p><a href="tel:+31551234567">055 - 123 45 67</a><a href="mailto:yo@theurbanbarber.nl">yo@theurbanbarber.nl</a><a class="route-link" href="https://www.google.com/maps/search/?api=1&query=Apeldoorn" target="_blank" rel="noopener">Plan je route ↗</a></div>
     </section>
   </main>
 
   <footer class="site-footer">
     <a class="brand" href="index.html"><span class="brand-mark">UB</span><span>The Urban Barber</span></a>
     <p>© <span data-year></span> The Urban Barber</p>
-    <div class="footer-links"><a href="#">Instagram</a><a href="#">Spotify</a></div>
+    <div class="footer-links"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://open.spotify.com/" target="_blank" rel="noopener">Spotify</a></div>
   </footer>
 </body>
 </html>
