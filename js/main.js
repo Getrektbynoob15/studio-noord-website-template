@@ -18,3 +18,10 @@ navigation?.querySelectorAll("a").forEach((link) => {
 document.querySelectorAll("[data-year]").forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
+
+document.querySelector(".booking-form")?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  event.currentTarget.querySelector(".form-status").textContent =
+    "Top. Je aanvraag is ontvangen. We nemen snel contact met je op.";
+  event.currentTarget.reset();
+});
